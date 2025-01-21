@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  scroll-behavior: smooth;
+} */
+
+.bannerText {
+  /* color: red; */
+  text-transform: uppercase;
+  font-family: "oswald";
+  font-weight: bold;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: transparent;
+  background-image: url(./assets/text-bg.png);
+  background-position: 40% 86%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+::selection {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.scrollSkill {
+  /* @apply my-20; */
+  animation: scroll 10s linear infinite;
+  filter: grayscale(1.1);
+}
+
+.hoverGray:hover {
+  @apply text-neutral-800;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: -60%;
+  }
+}
