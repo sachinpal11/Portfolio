@@ -1,22 +1,36 @@
-import React, { useState } from 'react'
-
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import ProjectHead from './ProjectHead'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from 'gsap';
+import NotesApp from '../assets/NotesApp.png'
+import FaceBook from '../assets/FaceBook.png'
+import Amazon from '../assets/Amazon.png'
+gsap.registerPlugin(ScrollTrigger)
 function Projects() {
-  const [xvalueOne, setXvalueOne] = useState();
-  const [xvalueTwo, setXvalueTwo] = useState();
-  const [OneVisible, setOneVisible] = useState();
-  const [TwoVisible, setTwoVisible] = useState();
-  const handleAnimationOne = () => {
-    setOneVisible(prev => !prev);
-    console.log(OneVisible);
-  }
+  const ProjectRef = useRef();
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(ProjectRef.current, {
+        backgroundColor: "rgb(23 23 23)",
+        scrollTrigger: {
+          trigger: ProjectRef.current,
+          start: "top 70%",
+          end: "top 50%",
+          scrub: 3,
+        },
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
-    <div className='flex font-[oswald] flex-col items-center w-full h-auto py-10 gap-10 bg-neutral-900'>
+    <div ref={ProjectRef} id='projects' className='flex font-[oswald] flex-col items-center w-full h-auto py-10 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
       <h2 className=' text-neutral-100 text-5xl font-bold uppercase'>My Projects</h2>
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
-        <div className='w-full relative h-auto py-6 px-10 text-4xl sm:text-9xl text-white'><span>To do app</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" className='h-[60px] sm:h-[120px] top-[10%] absolute right-[10%] ' alt="" /></div>
-        <div className='relative w-full px-10 h-auto text-4xl sm:text-9xl py-6 text-white' onMouseEnter={handleAnimationOne} onMouseLeave={() => setOneVisible(false)}><span className='w-[80%]'>FaceBook Clone</span>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png" className={`h-[60px] sm:h-[120px] top-[10%] absolute right-[10%] flex sm:hidden sm:${OneVisible ? "flex" : "hidden"} left-[${""}] `} alt="" />
-        </div>
+        <ProjectHead value={"Notes App"} imgValue={NotesApp} />
+        <ProjectHead value={"Facebook clone"} imgValue={FaceBook} />
+        <ProjectHead value={"Amazon"} imgValue={Amazon} />
       </div>
     </div>
   )

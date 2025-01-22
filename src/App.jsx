@@ -20,6 +20,7 @@ function App() {
       <AboutUs />
       <Skills />
       <Projects />
+      <div className='w-full h-[50vh]'></div>
     </div>
   )
 }

@@ -11,7 +11,7 @@ function Navbar({ setOpen, isOpen }) {
       <div className='hidden sm:flex'>
         <ul className='flex text-md gap-10 font-[poppins] uppercase font-semibold md:text-lg '>
           <li className="relative cursor-pointer after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-black after:bottom-[-10px] after:left-0 hover:after:w-full after:transition-all ease-in-out"><a href="#about">About me</a></li>
-          <li className="relative after:content-[''] after:absolute after:w-[0] after:h-[2px] after:bg-black after:bottom-[-10px] after:left-0 after:transition-all hover:after:w-full cursor-pointer ease-in-out ">Projects</li>
+          <li className="relative after:content-[''] after:absolute after:w-[0] after:h-[2px] after:bg-black after:bottom-[-10px] after:left-0 after:transition-all hover:after:w-full cursor-pointer ease-in-out "><a href="#projects">Projects</a></li>
         </ul>
       </div>
       <div className='font-[poppins] font-semibold md:text-lg  gap-4 uppercase hidden sm:flex'>

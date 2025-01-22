@@ -6,6 +6,7 @@ import redux from '../assets/redux.png'
 import mongodb from '../assets/mongodb.webp'
 import ts from '../assets/ts.webp'
 
+
 export const SkillImages = [js, node, reactRouter, ts, react, redux, mongodb];
 
-
+document

@@ -3,7 +3,7 @@ import BannerText from './BannerText'
 
 function HomeBanner() {
   return (
-    <div className='w-full mt-20 sm:mt-10 h-auto pb-20 items-center gap-10 flex flex-col'>
+    <div id='Resume' className='w-full mt-20 sm:mt-10 h-auto pb-20 items-center gap-10 flex flex-col'>
       <div className='relative h-fit flex justify-center items-center '>
         <h1 className='text-[18.5vw] text-neutral-900 tracking-tighter cursor-default font-bold uppercase font-[oswald]' >Portfolio</h1>
         <div className='absolute bg-neutral-900 rounded-xl top-[10%] right-[20%] rotate-[-5deg] '>
