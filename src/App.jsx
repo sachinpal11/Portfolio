@@ -7,6 +7,8 @@ import './App.css'
 import AboutUs from './components/AboutUs';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 function App() {
   const [isOpen, setOpen] = useState(false);
 
@@ -20,7 +22,8 @@ function App() {
       <AboutUs />
       <Skills />
       <Projects />
-      <div className='w-full h-[50vh]'></div>
+      <ContactMe />
+      <Footer />
     </div>
   )
 }

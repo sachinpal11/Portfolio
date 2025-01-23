@@ -7,6 +7,7 @@ import NotesApp from '../assets/NotesApp.png'
 import FaceBook from '../assets/FaceBook.png'
 import Amazon from '../assets/Amazon.png'
 import DPworld from '../assets/dpworld.png'
+import Heading from './Heading';
 gsap.registerPlugin(ScrollTrigger)
 function Projects() {
   const ProjectRef = useRef();
@@ -27,7 +28,7 @@ function Projects() {
   }, []);
   return (
     <div ref={ProjectRef} id='projects' className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
-      <h2 className=' text-neutral-100 text-5xl font-bold uppercase'>My Projects</h2>
+      <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
         <ProjectHead value={"Notes App"} imgValue={NotesApp} />
         <ProjectHead value={"Facebook clone"} imgValue={FaceBook} />
