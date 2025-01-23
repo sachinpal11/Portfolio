@@ -30,10 +30,10 @@ function Projects() {
     <div ref={ProjectRef} id='projects' className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
       <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
-        <ProjectHead value={"Notes App"} imgValue={NotesApp} />
-        <ProjectHead value={"Facebook clone"} imgValue={FaceBook} />
-        <ProjectHead value={"Amazon"} imgValue={Amazon} />
-        <ProjectHead value={"dp sports world"} imgValue={DPworld} />
+        <ProjectHead value={"Notes App"} link={""} imgValue={NotesApp} />
+        <ProjectHead value={"Facebook clone"} link={""} imgValue={FaceBook} />
+        <ProjectHead value={"Amazon"} link={""} imgValue={Amazon} />
+        <ProjectHead value={"dp sports world"} link={"https://dp-sports-world.netlify.app/"} imgValue={DPworld} />
       </div>
     </div>
   )
