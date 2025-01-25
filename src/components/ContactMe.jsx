@@ -43,17 +43,17 @@ function ContactMe() {
   })
 
   const handleInsta = () => {
-    window.open("http://www.instagram.com/sachinxportfolio")
+    window.open("https://www.instagram.com/sachinxportfolio/", "_blank")
   }
   const handlelinkedin = () => {
-    window.open('https://www.linkedin.com/in/sachin-pal11/');
+    window.open('https://www.linkedin.com/in/sachin-pal11/', "_blank");
   }
   return (
     <div id='contact' className='py-10 font-[oswald] flex flex-col w-full h-[90vh] items-center justify-center bg-neutral-900'>
       <Gap />
       <h1 className=' relative w-full text-neutral-100 text-6xl sm:text-9xl font-bold uppercase text-center'>
         <span >Want to contact me ?</span>
-        <img className='w-[60px] sm:w-[100px] absolute top-[-10%] sm:right-[20%]' ref={instaRef} onClick={handleInsta} src={instagram} alt="" />
+        <img className='w-[60px] sm:w-[100px] absolute top-[-10%] right-[50%] sm:right-[20%]' ref={instaRef} onClick={handleInsta} src={instagram} alt="" />
         <img className='w-[60px] sm:w-[100px] absolute bottom-[10%] left-[30%] ' src={linkedin} onClick={handlelinkedin} ref={LinkRef} alt="" />
       </h1>
       <span className='text-2xl mt-5 sm:mt-10 text-white uppercase'>My socials</span>
