@@ -30,7 +30,7 @@ function Projects() {
     <div ref={ProjectRef} id='projects' className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
       <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
-        <ProjectHead value={"Notes App"} link={""} imgValue={NotesApp} />
+        <ProjectHead value={"Notes App"} link={"https://notesapp-sachin.netlify.app/"} imgValue={NotesApp} />
         <ProjectHead value={"Facebook clone"} link={""} imgValue={FaceBook} />
         <ProjectHead value={"Amazon"} link={""} imgValue={Amazon} />
         <ProjectHead value={"dp sports world"} link={"https://dp-sports-world.netlify.app/"} imgValue={DPworld} />

@@ -16,7 +16,7 @@ function ProjectHead({ value, imgValue, link }) {
     })
   };
   const HandleLink = () => {
-    console.log("hello")
+
     window.open(link, "_blank");
   }
 
