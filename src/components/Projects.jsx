@@ -26,14 +26,40 @@ function Projects() {
 
     return () => ctx.revert();
   }, []);
+
+  const ProjectList = [
+    {
+      value: "Notes App",
+      link: "https://notesapp-sachin.netlify.app/",
+      imgvalue: NotesApp
+    },
+    {
+      value: "FaceBook Clone",
+      link: "https://github.com/sachinpal11/FacebookClone",
+      imgvalue: FaceBook
+    },
+    {
+      value: "Amazon",
+      link: "https://github.com/sachinpal11/amazon-2",
+      imgvalue: NotesApp
+    },
+    {
+      value: "Dp sports world",
+      link: "https://dp-sports-world.netlify.app/",
+      imgvalue: DPworld
+    },
+  ]
+
+
   return (
     <div ref={ProjectRef} id='projects' className='flex font-[oswald] flex-col items-center w-full h-auto py-14 gap-10 mt-[10%] bg-neutral-900 sm:bg-white'>
       <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
-        <ProjectHead value={"Notes App"} link={"https://notesapp-sachin.netlify.app/"} imgValue={NotesApp} />
-        <ProjectHead value={"Facebook clone"} link={"https://github.com/sachinpal11/FacebookClone"} imgValue={FaceBook} />
-        <ProjectHead value={"Amazon"} link={"https://github.com/sachinpal11/amazon-2"} imgValue={Amazon} />
-        <ProjectHead value={"dp sports world"} link={"https://dp-sports-world.netlify.app/"} imgValue={DPworld} />
+        {
+          ProjectList.map((item, index) => (
+            <ProjectHead value={item.value} imgValue={item.imgvalue} link={item.link} />
+          ))
+        }
       </div>
     </div>
   )
