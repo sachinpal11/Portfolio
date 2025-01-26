@@ -8,7 +8,7 @@ function Sidebar({ isOpen, setOpen }) {
         <li onClick={() => setOpen(!isOpen)} className=''><a href="#about">About us</a></li>
         <li onClick={() => setOpen(!isOpen)} className=''><a href="#projects">Projects</a></li>
         <li onClick={() => setOpen(!isOpen)} className=''><a href="#contact">Contact us</a></li>
-        <li onClick={() => setOpen(!isOpen)} className=''><a href="">Resume</a></li>
+        <li onClick={() => setOpen(!isOpen)} className=''><a href="https://drive.google.com/file/d/1z37yVnp_o31vwgPHHlZb6w-AImkN9ful/view?usp=sharing" target='_blank' >Resume</a></li>
         <div className='flex gap-5 mt-10 text-4xl text-neutral-900'>
           <span className='p-2 rounded-full bg-neutral-100'><a href="https://www.instagram.com/sachinxportfolio"><TbBrandInstagram /></a></span>
           <span className='p-2 rounded-full bg-neutral-100'><a href="https://www.linkedin.com/in/sachin-pal11/"><TbBrandLinkedin /></a></span>

@@ -16,7 +16,7 @@ function Navbar({ setOpen, isOpen }) {
       </div>
       <div className='font-[poppins] font-semibold md:text-lg  gap-4 uppercase hidden sm:flex'>
         <button className='px-5 py-3 uppercase bg-neutral-800 text-neutral-100 rounded-lg text-md'><a href="#contact" >Contact</a></button>
-        <button className='px-5 py-3 uppercase bg-neutral-300 text-neutral-800 rounded-lg text-md'><a href="" target='_blank'>Resume</a></button>
+        <button className='px-5 py-3 uppercase bg-neutral-300 text-neutral-800 rounded-lg text-md'><a href="https://drive.google.com/file/d/1z37yVnp_o31vwgPHHlZb6w-AImkN9ful/view?usp=sharing" target='_blank'>Resume</a></button>
       </div>
       <div onClick={() => setOpen(!isOpen)} className='flex sm:hidden text-4xl cursor-pointer'><TbMenu /></div>
     </div>

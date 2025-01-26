@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
+import Cursor from './components/Cursor';
 function App() {
   const [isOpen, setOpen] = useState(false);
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className='relative'>
+      <Cursor />
       <Navbar setOpen={setOpen} isOpen={isOpen} />
       <Sidebar isOpen={isOpen} setOpen={setOpen} />
       <HomeBanner />

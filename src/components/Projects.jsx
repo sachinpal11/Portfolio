@@ -31,8 +31,8 @@ function Projects() {
       <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
         <ProjectHead value={"Notes App"} link={"https://notesapp-sachin.netlify.app/"} imgValue={NotesApp} />
-        <ProjectHead value={"Facebook clone"} link={""} imgValue={FaceBook} />
-        <ProjectHead value={"Amazon"} link={""} imgValue={Amazon} />
+        <ProjectHead value={"Facebook clone"} link={"https://github.com/sachinpal11/FacebookClone"} imgValue={FaceBook} />
+        <ProjectHead value={"Amazon"} link={"https://github.com/sachinpal11/amazon-2"} imgValue={Amazon} />
         <ProjectHead value={"dp sports world"} link={"https://dp-sports-world.netlify.app/"} imgValue={DPworld} />
       </div>
     </div>
