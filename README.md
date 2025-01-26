@@ -52,9 +52,9 @@ To run this project locally, follow these steps:
 
 | Section        | Screenshot                       |
 |----------------|-----------------------------------|
-| Home           | ![Home](src\assets\portfolio1.png) |
-| About          | ![About](src\assets\portfolio2.png) |
-| Projects       | ![Projects](src\assets\portfolio3.png) |
+| Home           | ![Home](src/assets/portfolio1.png) |
+| About          | ![About](src/assets/portfolio2.png) |
+| Projects       | ![Projects](src/assets/portfolio3.png) |
 
 ## 📜 Features
 
