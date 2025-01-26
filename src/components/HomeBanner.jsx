@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerText from './BannerText'
 
-function HomeBanner() {
+function HomeBanner({ istext, setText }) {
   const handleResume = () => {
     window.open("https://drive.google.com/file/d/1z37yVnp_o31vwgPHHlZb6w-AImkN9ful/view?usp=sharing", "_blank~")
   }

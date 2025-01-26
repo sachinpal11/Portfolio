@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react'
+import { use } from 'react';
 
 function Cursor() {
   const cursorRef = useRef();
@@ -12,6 +13,7 @@ function Cursor() {
       })
     })
   }, [])
+
   return (
     <div ref={cursorRef} className='w-[20px] h-[20px] fixed bg-black hidden sm:flex rounded-full z-40'>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar';
 import LocomotiveScroll from 'locomotive-scroll';
@@ -14,6 +14,7 @@ function App() {
   const [isOpen, setOpen] = useState(false);
 
   const locomotiveScroll = new LocomotiveScroll();
+
 
   return (
     <div className='relative'>
