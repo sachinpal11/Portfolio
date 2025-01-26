@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 import Cursor from './components/Cursor';
 function App() {
   const [isOpen, setOpen] = useState(false);
-
   const locomotiveScroll = new LocomotiveScroll();
 
 

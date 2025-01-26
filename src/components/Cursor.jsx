@@ -5,13 +5,17 @@ import { use } from 'react';
 function Cursor() {
   const cursorRef = useRef();
   useEffect(() => {
-    window.addEventListener("mousemove", (e) => {
+
+    const CursorAnimation = (e) => {
       gsap.to(cursorRef.current, {
         x: e.clientX,
         y: e.clientY,
         ease: "elastic.out(1,0.3)",
       })
-    })
+    }
+
+    window.addEventListener("mousemove", CursorAnimation)
+    return () => window.removeEventListener("mousemove", CursorAnimation)
   }, [])
 
   return (
