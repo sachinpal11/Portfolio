@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react'
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import NotesApp from '../assets/NotesApp.png'
-import FaceBook from '../assets/FaceBook.png'
+import FaceBook from '../assets/faceBook.png'
 import Amazon from '../assets/Amazon.png'
 import DPworld from '../assets/dpworld.png'
 import Heading from './Heading';
