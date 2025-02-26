@@ -30,29 +30,34 @@ function Projects() {
 
   const ProjectList = [
     {
+      id: 1,
       value: "Sain Portfolio",
       link: "https://lucky-banoffee-4e4a8c.netlify.app/",
       imgvalue: SainPortfolio
     },
     {
+      id: 2,
+      value: "Dp sports world",
+      link: "https://dp-sports-world.netlify.app/",
+      imgvalue: DPworld
+    },
+    {
+      id: 3,
       value: "Notes App",
       link: "https://notesapp-sachin.netlify.app/",
       imgvalue: NotesApp
     },
     {
+      id: 4,
       value: "FaceBook Clone",
       link: "https://github.com/sachinpal11/FacebookClone",
       imgvalue: FaceBook
     },
     {
+      id: 5,
       value: "Amazon",
       link: "https://github.com/sachinpal11/amazon-2",
       imgvalue: Amazon
-    },
-    {
-      value: "Dp sports world",
-      link: "https://dp-sports-world.netlify.app/",
-      imgvalue: DPworld
     },
   ]
 
@@ -62,8 +67,8 @@ function Projects() {
       <Heading value={"Projects"} giveColor={"white"} />
       <div className='w-full h-auto flex flex-col font-semibold cursor-pointer uppercase'>
         {
-          ProjectList.map((item, index) => (
-            <ProjectHead value={item.value} imgValue={item.imgvalue} link={item.link} />
+          ProjectList.map((item) => (
+            <ProjectHead value={item.value} key={item.id} imgValue={item.imgvalue} link={item.link} />
           ))
         }
       </div>
