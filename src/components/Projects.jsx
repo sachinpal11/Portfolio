@@ -5,7 +5,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import NotesApp from '../assets/NotesApp.png'
 import FaceBook from '../assets/faceBook.png'
-import Amazon from '../assets/Amazon.png'
+import Amazon from '../assets/amazon.png'
+import SainPortfolio from '../assets/SainPortolio.png'
 import DPworld from '../assets/dpworld.png'
 import Heading from './Heading';
 gsap.registerPlugin(ScrollTrigger)
@@ -29,6 +30,11 @@ function Projects() {
 
   const ProjectList = [
     {
+      value: "Sain Portfolio",
+      link: "https://lucky-banoffee-4e4a8c.netlify.app/",
+      imgvalue: SainPortfolio
+    },
+    {
       value: "Notes App",
       link: "https://notesapp-sachin.netlify.app/",
       imgvalue: NotesApp
@@ -41,7 +47,7 @@ function Projects() {
     {
       value: "Amazon",
       link: "https://github.com/sachinpal11/amazon-2",
-      imgvalue: NotesApp
+      imgvalue: Amazon
     },
     {
       value: "Dp sports world",
