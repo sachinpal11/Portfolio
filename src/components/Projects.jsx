@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import NotesApp from '../assets/NotesApp.png'
 import FaceBook from '../assets/faceBook.png'
 import Amazon from '../assets/amazon.png'
-import SainPortfolio from '../assets/SainPortolio.png'
+import SainPortfolio from '../assets/sainPortolio.png'
 import DPworld from '../assets/dpworld.png'
 import Heading from './Heading';
 gsap.registerPlugin(ScrollTrigger)
