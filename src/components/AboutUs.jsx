@@ -1,5 +1,5 @@
 import React from 'react'
-import SachinLogo from '../assets/linkdinLogo.png'
+import SachinLogo from '../assets/sachindp.png'
 import { TbBrandGithubFilled, TbBrandInstagramFilled, TbBrandLinkedinFilled, TbMail, TbMailFilled } from 'react-icons/tb'
 import Heading from './Heading'
 function AboutUs() {
