@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import Cursor from './components/Cursor';
+import Contact from './components/Contact';
 function App() {
   const [isOpen, setOpen] = useState(false);
   const locomotiveScroll = new LocomotiveScroll();
@@ -24,7 +25,8 @@ function App() {
       <AboutUs />
       <Skills />
       <Projects />
-      <ContactMe />
+      {/* <ContactMe /> */}
+      <Contact />
       <Footer />
     </div>
   )

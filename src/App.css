@@ -62,3 +62,17 @@ body::-webkit-scrollbar {
     margin-left: -60%;
   }
 }
+
+.ContactInput {
+  border: rgb(215, 215, 215) 2px solid;
+  @apply px-5 py-1 rounded-xl outline-1 text-xl w-full
+}
+
+.ContactBtn {
+  transition: all 0.2s ease-in-out;
+}
+
+.ContactBtn:hover {
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+
+}

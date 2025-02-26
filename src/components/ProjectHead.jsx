@@ -38,7 +38,7 @@ function ProjectHead({ value, imgValue, link }) {
 
         <div ref={hoverRef} className={`absolute flex items-center 
           ${isVisible ? "top-0" : "top-[100%]"} 
-          w-full h-full transition-all duration-200 ease-in-out bg-blue-600`}>
+          w-full h-full transition-all duration-200 ease-in-out bg-orange-600`}>
 
           <span className={`text-nowrap scrollSkill 
             ${isVisible ? "mt-0" : "mt-[100%]"} 
