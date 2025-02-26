@@ -4,7 +4,7 @@ import { TbMenu } from 'react-icons/tb'
 function Navbar({ setOpen, isOpen }) {
 
   return (
-    <div className='px-6 py-3 top-0 sticky backdrop-blur-lg bg-white/30 z-10 items-center w-full flex justify-between'>
+    <div className='px-6 py-3 top-0 sticky backdrop-blur-lg bg-white/30 z-30 items-center w-full flex justify-between'>
       <div className='flex items-center px-5 justify-between'>
         <span className='font-[Oswald] uppercase tracking-tighter md:text-4xl text-3xl font-bold sm:text-4xl '>SainxFolio</span>
       </div>
