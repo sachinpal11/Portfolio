@@ -27,7 +27,7 @@ function Contact() {
     }
   };
   return (
-    <div className='w-full h-auto py-10 bg-neutral-900'>
+    <div id='contact' className='w-full h-auto py-10 bg-neutral-900'>
       <Gap />
       <Gap />
       <div className='relative flex h-auto sm:flex-row items-center flex-col justify-center'>
