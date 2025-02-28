@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
   font-weight: bold;
   -webkit-text-stroke-color: #fff;
   -webkit-text-fill-color: transparent;
-  background-image: url(./assets/text-bg.png);
+  background-image: url(./assets/text-bg1.png);
   background-position: 40% 86%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;

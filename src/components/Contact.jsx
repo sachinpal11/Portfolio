@@ -37,7 +37,7 @@ function Contact() {
             <span>Together</span>
           </p>
         </div>
-        <div className='w-[90%] py-14 z-20  sm:w-[50%] xl:w-[40%] font-[poppins] flex flex-col gap-2 rounded-xl bg-white p-4'>
+        <div className='w-[90%] py-14 px-5 z-20  sm:w-[50%] xl:w-[40%] font-[poppins] flex flex-col gap-2 rounded-xl bg-white p-4'>
           <span className='font-[oswald] text-5xl text-neutral-900 font-semibold'>Get in Touch</span>
           <span className='text-neutral-700'>You can reach me anytime</span>
           <form className='w-full flex flex-col gap-3 mt-6' onSubmit={onSubmit}>

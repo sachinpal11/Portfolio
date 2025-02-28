@@ -43,7 +43,7 @@ function ContactMe() {
   })
 
   const handleInsta = () => {
-    window.open("https://www.instagram.com/sachinxportfolio/", "_blank")
+    window.open("https://www.instagram.com/ig.sain.dev/", "_blank")
   }
   const handlelinkedin = () => {
     window.open('https://www.linkedin.com/in/sachin-pal11/', "_blank");
