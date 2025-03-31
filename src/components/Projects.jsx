@@ -9,6 +9,8 @@ import Amazon from '../assets/amazon.png'
 import SainPortfolio from '../assets/sainPortolio.png'
 import DPworld from '../assets/dpworld.png'
 import Heading from './Heading';
+import CredScrap from '../assets/credscrap.png'
+import BookmyDoctor from '../assets/bookmydoctor.png'
 gsap.registerPlugin(ScrollTrigger)
 function Projects() {
   const ProjectRef = useRef();
@@ -58,6 +60,18 @@ function Projects() {
       value: "Amazon",
       link: "https://github.com/sachinpal11/amazon-2",
       imgvalue: Amazon
+    },
+    {
+      id: 6,
+      value: "CredScrap",
+      link: "https://credscrap.vercel.app/",
+      imgvalue: CredScrap
+    },
+    {
+      id: 7,
+      value: "Book My Doctor",
+      link: "https://book-my-doctor-v1.vercel.app/",
+      imgvalue: BookmyDoctor
     },
   ]
 
